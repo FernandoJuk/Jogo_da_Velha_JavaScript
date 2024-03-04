@@ -1,0 +1,85 @@
+.font {
+    font-family: "Rubik Dirt", system-ui;
+    font-weight: 500;
+    font-style: italic;
+    color: #BAB9D9;
+    font-size: 60px;
+    text-shadow: 4px 4px 4px rgba(112, 111, 111, 0.5); /* Sombra com deslocamento de 2px para baixo e para a direita */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Alinha ao centro na vertical */
+    align-items: center;
+    /* Alinha ao centro na horizontal */
+    flex-wrap: nowrap;
+    margin-top: 19vh;
+}
+
+body {
+    
+    background-color: #15142b;
+    background-image: linear-gradient(180deg, #18123d, #07070f);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+
+        /*display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;*/
+}
+
+.botoes_principal button {
+    height: 15vh;
+    /* 15% da altura da tela */
+    width: 15vw;
+    /* 15% da largura da tela */
+    border-radius: 4px;
+    font-family: "Rubik Dirt", system-ui;
+    font-weight: 500;
+    color: #050B0F;
+    font-size: 10vh;
+    padding: 1px; /* Adicione padding para dentro do botão */
+    box-sizing: border-box; /* Inclui padding e borda no tamanho total do botão */
+    line-height: 15vh; /* Alinha o texto verticalmente ao centro */
+    color: transparent; /* Torna o texto transparente */
+}
+
+.p1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color: #BAB9D9;
+    
+}
+
+@keyframes aumentarDiminuir {
+    0% { font-size: 60px; }
+    50% { font-size: 40px; }
+    100% { font-size: 60px; }
+}
+
+.msg1{
+    font-family: "Rubik Dirt", system-ui;
+    font-weight: 500;
+    font-style: italic;
+    color: #BAB9D9;
+    text-shadow: 4px 4px 4px rgba(112, 111, 111, 0.5); /* Sombra com deslocamento de 2px para baixo e para a direita */
+    animation: aumentarDiminuir 3s infinite alternate; /* A animação dura 3 segundos e é repetida 
+      /* Define uma animação para aumentar e diminuir o tamanho do texto */     
+}
+.jumbotron {
+    background-image: url('./Assets/imagen_fundo.jpg');
+    background-size: Cover; /* Para cobrir todo o espaço do elemento */
+    background-position: center; /* Para centralizar a imagem */
+    color: white; /* Define a cor do texto para branco */
+    height: 25vh;
+}
+.audio{
+    display: none;
+}
