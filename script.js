@@ -33,19 +33,19 @@ function pararEIniciarDoInicio() {
   }
 
 function esconde_resultado(){
-    // Definir o estilo como "none" após 5 segundos
+    // Aapagar a mensagem de resultado apos 5 segundos
     setTimeout(function () {
         mensagem.style.display = "none";
     }, 5000); // 5000 milissegundos = 5 segundos
 }  
 
-function muda_letra() {
+function muda_letra(event) {
     console.log(clicou);
     if (clicou === 0) {
         pararEIniciarDoInicio();
     }   
     clicou++;
-    var botaoClicado = event.target;
+    let botaoClicado = event.target;
 
     // Verifica se o texto do botão é "F" (indicando que ainda não foi clicado)
     if (botaoClicado.textContent === "F") {
